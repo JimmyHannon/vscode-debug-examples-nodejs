@@ -26,6 +26,23 @@ To launch the debugger, select the "launch" configuration in the DEBUG window an
 Same as attaching to the default app but with NodeMon as process.
 To launch the debugger, select the "Attach to Process" configuration in the DEBUG window and start debugging.
 
+## Launch Transpiled Babel app
+
+To launch the debugger, select the "Launch Babel" configuration in the DEBUG window and start debugging.
+
+## Attach to running Transpiled Babel app
+
+! I cant get this to work!
+To launch the debugger, select the "Attach Babel" configuration in the DEBUG window and start debugging.
+
+## Attach to running Transpiled Babel app through inspectctor protocol
+
+Launch the app with command:
+`
+npm run start-compiled-inspect
+`
+To launch the debugger, select the "Attach (Inspector Protocol)" configuration in the DEBUG window and start debugging.
+
 # Dockerized NodeJs configurations
 
 In order to run the dockerized examples first build the image
@@ -51,3 +68,4 @@ docker run -it --rm -p 3000:3000 -p 5858:5858 -v <path-to-folder>:/app vscode-de
 `
 
 To launch the debugger, select the "Attach to Docker" configuration in the DEBUG window and start debugging.
+
